@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">WhatsApp Chats Analyser</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item {% block homeactive %} {% endblock homeactive %}">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <title>{% block title %} {% endblock title %}</title>
+  <style>
+    table.dataframe,
+    .dataframe th,
+    .dataframe td {
+      border: none;
+      border-bottom: 1px solid #C8C8C8;
+      border-collapse: collapse;
+      text-align: left;
+      padding: 10px;
+      margin-bottom: 40px;
+      font-size: 0.9em;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #eee;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fff;
+    }
+
+    tr:hover {
+      background-color: #ffff99;
+    }
+    .carousel-indicators .active{
+    background-color: #f00;
+    }
+    .carousel-control-next-icon:after
+    {
+    content: '>';
+    font-size: 55px;
+    color: red;
+    }
+
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 55px;
+      color: red;
+    }
+    .footer{
+
+      background-color: #C8C8C8;
+      color: #000000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .contact-icon{
+      color: #000000;
+      padding: 7px;
+    }
+
+    .contact-icon:hover{
+      color: #a6a19a;
+    }
+
+    .footer-description{
+      margin: 0;
+      font-size: 18px;
+      font-weight: 100;
+    }
+  </style>
+</head>
+  <!-- Body Block -->
+  {% block body %} {% endblock body %}
+  <div class='footer'>
+      <div class="contact">
+          <a target="_blank" href="https://github.com/tauhidalam/whatsapp_chat_analyser/"><i class="fab fa-github fa-lg contact-icon"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/touhid-alam-8209461a4/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+      </div>
+      <p class='footer-description'>Made with ❤️ by Touhid Alam.</p>
+      <p class="footer-description">Credits to Kaustubh Gupta for Amazing WebApp.</p>
+    </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
